@@ -1,0 +1,108 @@
+/* Fonts to be used */
+@font-face {
+    font-family: 'Popping-light';
+    src: url('../assets/fonts/Poppins/Poppins-ExtraLight.ttf');
+}
+
+@font-face {
+    font-family: 'Popping-Normal';
+    src: url('../assets/fonts/Poppins/Poppins-Light.ttf');
+}
+
+@font-face {
+    font-family: 'Popping-bold';
+    src: url('../assets/fonts/Poppins/Poppins-Bold.ttf');
+}
+
+/* container properties */
+.container{
+    display: flex;
+    flex-direction: column;
+    align-items: center;   
+    padding: 7vh 12vw;
+}
+
+/* global <p> property */
+p{
+    font-family: 'Popping-light';
+    font-size: 3.5vw; 
+    color: var(--Grayish_Blue);
+    font-weight: 200;
+    text-align: center;
+}
+
+header > p {
+    font-size: 6vw;
+    font-family: 'Popping-light';
+    color: var(--Very_Dark_Blue);
+    margin : 0px;
+    font-weight: 200;
+}
+
+header > p:last-child{
+    font-family: 'Popping-bold';
+    color: var(--Very_Dark_Blue);
+    font-weight: 400;
+}
+
+section{
+    width: 100%;
+    word-wrap: normal;
+    
+}
+
+/* footers <p> properties */
+.attribution { 
+    font-size: 2.5vw; 
+    text-align: center; 
+    margin-top: 1vh;
+}
+
+.attribution a { 
+    color: hsl(228, 45%, 44%); 
+    font-weight: 700;
+}
+
+@media (min-width : 481px) and (max-width : 600px){
+
+    .container{   
+        padding: 7vh;
+    }
+
+    /* global <p> property */
+    p{
+        font-size: 2vw; 
+    }
+
+    header > p {
+        font-size: 4vw;
+    }
+
+    section{
+        width: 60vw;
+    }
+
+    .attribution { 
+        font-size: 2vw; 
+    }
+}
+
+@media (min-width : 601px){
+    
+    /* global <p> property */
+    p{
+        font-size: 1vw; 
+    }
+
+    header > p {
+        font-size: 2vw;
+    }
+
+    section{
+        width: 30vw;
+    }
+
+    .attribution { 
+        font-size: 0.8vw; 
+    }
+}

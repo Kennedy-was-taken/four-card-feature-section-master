@@ -1,0 +1,26 @@
+/* Fonts to be used */
+@font-face {
+    font-family: 'Popping-light';
+    src: url('../../assets/fonts/Poppins/Poppins-ExtraLight.ttf');
+}
+
+@font-face {
+    font-family: 'Popping-Normal';
+    src: url('../../assets/fonts/Poppins/Poppins-Light.ttf');
+}
+
+@font-face {
+    font-family: 'Popping-bold';
+    src: url('../../assets/fonts/Poppins/Poppins-Bold.ttf');
+}
+
+
+main{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+}
+
+.container{
+    margin-bottom: 1vh;
+}
