@@ -14,13 +14,66 @@
     src: url('../../assets/fonts/Poppins/Poppins-Bold.ttf');
 }
 
-
+/* main properties */
 main{
     display: flex;
     flex-direction: column;
     width: 100%;
 }
 
-.container{
-    margin-bottom: 1vh;
+/* global <p> property */
+p{
+    font-size: 2.5vw;
+    font-family: 'Popping-light';
+    font-weight: 200;
+    margin-bottom: 5vh;
+}
+
+/* global header > <p> property */
+header > p{
+    font-size: 4vw;
+    font-family: 'Popping-bold';
+    font-weight: 400;
+    margin: 0px 0px;
+}
+
+header{
+    margin-bottom: 1vh 0px;
+}
+
+img{
+    display: flex;
+    width: 10vw;
+    margin-right: 0px;
+    margin-left: auto;
+}
+
+.card{
+    margin-bottom: 3vh;
+    padding: 3vh 5vw;
+    background-color: white;
+    border-radius: 10px;
+    box-shadow: 0px 9px 15px -5px var(--Grayish_Blue);
+    background-color: var(--Very_Light_Gray);
+    transition: all 0.2s ease;
+}
+
+.card:nth-child(1){
+    border-top: 5px solid var(--Cyan);
+}
+
+.card:nth-child(2){
+    border-top: 5px solid var(--Red);
+}
+
+.card:nth-child(3){
+    border-top: 5px solid var(--Orange);
+}
+
+.card:nth-child(4){
+    border-top: 5px solid var(--Blue)
+}
+
+.card:active{
+    transform: scale(1.1); /* Increase size by 10% */
 }

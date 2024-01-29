@@ -51,6 +51,10 @@ section{
     
 }
 
+main{
+    width: 100%;
+}
+
 /* footers <p> properties */
 .attribution { 
     font-size: 2.5vw; 
