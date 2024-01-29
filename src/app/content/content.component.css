@@ -55,7 +55,7 @@ img{
     border-radius: 10px;
     box-shadow: 0px 9px 15px -5px var(--Grayish_Blue);
     background-color: var(--Very_Light_Gray);
-    transition: all 0.2s ease;
+    transition: all 0.3s ease;
 }
 
 .card:nth-child(1){
@@ -77,3 +77,69 @@ img{
 .card:active{
     transform: scale(1.1); /* Increase size by 10% */
 }
+
+@media (min-width : 481px){
+
+    main{
+        display: flex;
+        flex-direction: column;
+        flex-wrap: nowrap;
+        justify-content: center;
+        align-items: center;
+    }
+    .card{
+        width: 20vw;
+        margin-bottom: 3vh;
+        padding: 2vh 3vw;
+        border-radius: 4px;
+        
+    }
+
+    /* global <p> property */
+    p{
+        font-size: 1vw;
+        margin-bottom: 3vh;
+    }
+
+    /* global header > <p> property */
+    header > p{
+        font-size: 1.5vw;
+    }
+
+    img{
+        width: 3vw;
+    }
+
+    .card:nth-child(1){
+        position: absolute;
+        left: 8%;
+        top: 35% relative;
+    } 
+    
+    .card:nth-child(4){
+        position: absolute;
+        right: 8% ;
+        top: 35% relative;
+    }
+
+    .card:nth-child(1){
+        border-top: 3px solid var(--Cyan);
+    }
+    
+    .card:nth-child(2){
+        border-top: 3px solid var(--Red);
+    }
+    
+    .card:nth-child(3){
+        border-top: 3px solid var(--Orange);
+    }
+    
+    .card:nth-child(4){
+        border-top: 3px solid var(--Blue)
+    }
+
+    .card:hover{
+        transform: scale(1.1); /* Increase size by 10% */
+    }
+}
+
